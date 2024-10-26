@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&display=swap");
+
+@font-face {
+  font-family: "HocusPocus-Regular";
+  src: url("https://wp.vault983.com/wp-content/uploads/2024/10/HocusPocus-Regular.ttf")
+    format("truetype");
+}
+
+.screen-block-datetime,
+.weather-current,
+.screen-block-text {
+  font-family: 'Creepster',sans-serif !important;
+}
+
+.caldate {
+  font-family: "Henny Penny" !important;
+}
+
+.block--Bat-1 {
+  position: absolute !important;
+  top: 43vh !important;
+  left: 0vw !important;
+  animation: movement 30s infinite;
+}
+@keyframes movement {
+  15% {
+    transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+  }
+  15.001%,
+  18% {
+    transform: translateX(108vw) translateY(-30%) rotateZ(0deg);
+  }
+
+  40% {
+    transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+  }
+
+  40.001%,
+  43% {
+    transform: translateX(-200%) translateY(-100%) rotateZ(-180deg);
+  }
+}
+.block--Bat-2 {
+    position: absolute !important;
+    top: 20vh !important;
+    left: 0 !important;
+ animation-name: bat-movement-3;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+ }
+ .block--bat2 .fa-bat {
+    transform: rotate(-24deg);
+ }
+ @keyframes bat-movement-2{
+    0% {
+       transform: translateX(100%) translateY(55%) 
+    }
+ 100% {
+       transform: translateX(-200%) translateY(10vh) 
+    }
+ }
+ @keyframes bat-movement-3 {
+    0% {
+       transform: translateX(110vw) translateY(10vh) 
+    }
+ 100% {
+       transform: translateX(-200vw) translateY(-45vh) 
+    }
+ }

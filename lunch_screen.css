@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&family=Rubik+Wet+Paint&display=swap');
+
+.block--Screen_title {
+  font-family: 'Rubik Wet Paint' !important;
+}
+.block--Todays_Date {
+  font-family: 'Rubik Wet Paint' !important;
+}
+.block--Todays_Wx {
+  font-family: 'Rubik Wet Paint' !important;
+}
+.block--Current_Time {
+  font-family: 'Rubik Wet Paint' !important;
+}
+.block-calendar {
+  font-family: 'Henny Penny' !important;
+}
+
+.block--GHOST_1 {
+    position: absolute;
+    top: 78vh !important;
+    left: -5vw !important;
+ animation-name: ghostly-float-left-to-right;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+ }
+ .block--ghost > DIV {
+    width: fit-content;
+ }
+ .block--ghost > DIV > .fa-ghost {
+    width: auto;
+ }
+
+ @keyframes ghostly-float-left-to-right {
+    0% {
+       transform: translate(0);
+       animation-timing-function: linear;
+    }
+ 15%  {
+       transform: translate(15vw, -1vh);
+       animation-timing-function: linear;
+    }
+ 30% {
+       transform: translate(30vw, 2vh);
+       animation-timing-function: linear;
+    }
+ 45%  {
+       transform: translate(45vw, -1vh);
+       animation-timing-function: linear;
+    }
+ 60% {
+       transform: translate(60vw, 2vh);
+       animation-timing-function: linear;
+    }
+ 75%  {
+       transform: translate(75vw, -1vh);
+       animation-timing-function: linear;
+    }
+ 90% {
+       transform: translate(90vw, 2vh);
+       animation-timing-function: linear;
+    }
+ 100% {
+       transform: translate(105vw, -1vh);
+       animation-timing-function: linear;
+    }
+ }

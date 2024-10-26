@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Henny+Penny&family=Rubik+Wet+Paint&display=swap');
+
+body { font-family: 'Walter Turncoat', cursive; }
+
+.block-text, .block-datetime{
+  font-family: 'Creepster' !important;
+}
+.countdown-item {
+  font-family: 'Rubik Wet Paint' !important;
+}
+.countdown-title, .dailyfacts, .weather {
+  font-family: 'Henny Penny' !important;
+  /*padding-top: 1em;
+  margin-bottom: .01em;
+  font-size: 2.1em;*/
+}
+.countdown-timers-container .countdown-timer {
+    margin-top: 1em;
+    padding: 0 0.1em 0 .1em !important
+    /* border: 1px solid transparent; */
+}
+/* Hide event color bar */
+.calendar-agenda li { border: none !important }
+
+/* Hide event times */
+.calendar-agenda .agenda-event-details { margin-left: 0 !important; }
+.calendar-agenda .agenda-event-time { display:none; }
+
+
+/* Hide the date (number) */
+.agenda-day-header-num { display: none }
+
+.agenda-day-header { border-bottom: none; }
+
+.dark
+{
+    display: none;
+}
+
+.weather-summary-text
+{
+    font-size: 115%;
+}
+
+.block { border-radius: .35em; }
+.block-name { font-size: 14pt }
+.calendar-agenda .day-container {
+    margin-bottom: 0px !important;
+}
+
+.block--pumpkin {
+     position: absolute;
+     top: 65vh !important;
+     left: -10vw !important;
+     animation-name: rolling-left-to-right; 
+animation-iteration-count: infinite; 
+animation-duration: 7s; 
+max-width: fit-content !important; 
+max-height: fit-content !important; 
+transform-origin: center !important;
+ }
+ .block--skull.block-icon {
+     --block-width: 90pt !important;
+     --block-width-px: 120px !important;
+     --block-height: 90pt !important;
+     --block-height-px: 120px !important;
+ }
+ @keyframes rolling-left-to-right {
+    from {
+       transform: translateX(0) rotate(0);
+       animation-timing-function: ease-in-out;
+    }
+ to {
+       transform: translateX(110vw) rotate(1440deg);
+       animation-timing-function: ease-in-out;
+    }
+ }
